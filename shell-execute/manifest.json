@@ -1,0 +1,1 @@
+﻿{"name":"shell-execute","id":20000,"commands":[{"theme":"shell-execute","syntax":"Find best application(&T):T"},{"theme":"shell-execute","syntax":"GET PROCESS LIST(&Y;&Y;&Y)"},{"theme":"shell-execute","syntax":"OPEN WITH APPLICATION(&T;&T)"},{"theme":"shell-execute","syntax":"PRINT WITH APPLICATION(&T;&T)"}]}
