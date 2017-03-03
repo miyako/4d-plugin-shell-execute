@@ -26,14 +26,14 @@ document|TEXT|Full path of document
 application|TEXT|Full path of application
 
 ```
-GET PROCESS LIST
+GET PROCESS LIST(names;paths;PIDs)
 ```
 
 Parameter|Type|Description
 ------------|------------|----
-document|ARRAY TEXT|Application names
-application|ARRAY TEXT|Application paths
-application|ARRAY INT32|Process numbers
+names|ARRAY TEXT|Application names
+paths|ARRAY TEXT|Application paths
+PIDs|ARRAY INT32|Process numbers
 
 Examples
 ---
