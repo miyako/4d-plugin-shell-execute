@@ -26,7 +26,7 @@ document|TEXT|Full path of document
 application|TEXT|Full path of application
 
 ```
-GET PROCESS LIST(names;paths;PIDs)
+GET PROCESS LIST (names;paths;PIDs)
 ```
 
 Parameter|Type|Description
