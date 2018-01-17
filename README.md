@@ -33,7 +33,7 @@ Parameter|Type|Description
 ------------|------------|----
 names|ARRAY TEXT|Application names
 paths|ARRAY TEXT|Application paths
-PIDs|ARRAY INT32|Process numbers
+PIDs|ARRAY LONGINT|Process numbers
 
 Examples
 ---
