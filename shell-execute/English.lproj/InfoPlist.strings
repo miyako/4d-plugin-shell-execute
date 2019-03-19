@@ -1,1 +1,1 @@
-﻿/* Localized versions of Info.plist keys */CFBundleName = "shell-execute";CFBundleShortVersionString = "1.0";CFBundleGetInfoString = "shell-execute version 1.0, Copyright 2014 miyako.";
+/* Localized versions of Info.plist keys */CFBundleName = "shell-execute";CFBundleShortVersionString = "1.0.1";CFBundleGetInfoString = "shell-execute version 1.0.1, Copyright 2019 miyako.";
