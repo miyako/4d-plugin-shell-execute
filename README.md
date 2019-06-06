@@ -18,6 +18,8 @@ except ``GET PROCESS LIST``
 
 ### Releases
 
+[2.0](https://github.com/miyako/4d-plugin-shell-execute/releases/tag/2.0)
+
 [1.0.1](https://github.com/miyako/4d-plugin-shell-execute/releases/tag/1.0.1)
 
 ## Syntax
