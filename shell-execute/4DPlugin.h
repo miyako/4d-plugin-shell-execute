@@ -10,6 +10,8 @@
 
 #if VERSIONWIN
 #include <tlhelp32.h>
+#include <shlwapi.h>
+#include <Shlguid.h>
 #endif
 
 // --- shell-execute

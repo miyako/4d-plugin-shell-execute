@@ -64,11 +64,22 @@ void Find_best_application(sLONG_PTR *pResult, PackagePtr pParams)
 	Param1.fromParamAtIndex(pParams, 1);
 
 #if VERSIONWIN
-	LPCTSTR lpFile = (LPCTSTR)Param1.getUTF16StringPtr();
-	wchar_t lpResult[MAX_PATH];
-	if((unsigned int)FindExecutable(lpFile, NULL, lpResult) >> 5){// >32
-        returnValue.setUTF16String((const PA_Unichar*)lpResult, wcslen(lpResult));
-	}
+#define BUFFERLENGTH 1024
+    LPCTSTR lpFile = (LPCTSTR)Param1.getUTF16StringPtr();
+    DWORD bufferLength = BUFFERLENGTH;
+    wchar_t lpResult[BUFFERLENGTH];
+
+	HRESULT res =
+		AssocQueryString(ASSOCF_INIT_IGNOREUNKNOWN | ASSOCF_NOTRUNCATE | ASSOCF_REMAPRUNDLL,
+			ASSOCSTR_EXECUTABLE,
+			lpFile,
+			NULL,
+			lpResult,
+			&bufferLength);
+
+	if (res == S_OK)
+		returnValue.setUTF16String((const PA_Unichar*)lpResult, bufferLength);
+    
 #else
     NSString *path = Param1.copyPath();
     CFURLRef url;
