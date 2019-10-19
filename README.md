@@ -18,6 +18,8 @@ except ``GET PROCESS LIST``
 
 ### Releases
 
+[2.0](https://github.com/miyako/4d-plugin-shell-execute/releases/tag/2.0)
+
 [1.0.1](https://github.com/miyako/4d-plugin-shell-execute/releases/tag/1.0.1)
 
 ## Syntax
@@ -43,8 +45,7 @@ names|ARRAY TEXT|Application names
 paths|ARRAY TEXT|Application paths
 PIDs|ARRAY LONGINT|Process numbers
 
-Examples
----
+### Examples
 
 ```
   //full path of best application to open given document
@@ -54,3 +55,11 @@ $appPath:=Find best application ($docPath)
   //OPEN WITH APPLICATION ($docPath;$appPath)
 PRINT WITH APPLICATION ($docPath;$appPath)
 ```
+
+### Remarks
+
+on windows, only 3rd party apps registered the "normal way" are reported.
+
+<img width="542" alt="スクリーンショット 2019-06-07 1 39 13" src="https://user-images.githubusercontent.com/1725068/59051497-fb730780-88c7-11e9-93c7-fecd7ea042fc.png">
+
+for instance, a delegate executable (Edge for ``.pdf``) are not reported.
